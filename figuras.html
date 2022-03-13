@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <title>Figuras geométricas | Curso Práctico de JavaScript en Platzi</title>
+</head>
+<body>
+  <header class="text-center">
+    <h1 class="display-1">
+      Figuras geométricas
+    </h1>
+    <p>Este es el primer taller del curso práctico de JavaScript</p>
+  </header>
+<!--Cuaddrado -->
+  <section class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col col-6">
+        <h2>Cuadrado</h2>
+        <h3>Calcula el área y perímetro de un cuadrado</h3>
+        <form class="input-group mb-1 ">
+          <input id="InputCuadrado" type="number" class="form-control" placeholder="Escribe cuánto mide cada lado de tu cuadrado:">
+        </form>
+        <button type="button" onclick="calcularPerimetroCuadrado()" class="btn btn-outline-primary">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()" class="btn btn-outline-success">
+          Calcular el área
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--Triángulo-->
+  <section class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col col-6">
+        <h2>Triángulos</h2>
+        <h3>Calcula el área y perímetro de un triángulo</h3>
+        <form class="input-group mb-1 ">
+          <input id="InputTriangulo1" type="number" class="form-control" placeholder="Escribe cuánto mide cada lado 1 de tu triángulo:">
+          <input id="InputTriangulo2" type="number" class="form-control" placeholder="Escribe cuánto mide cada lado 2 de tu triángulo:">
+          <input id="InputTrianguloBase" type="number" class="form-control" placeholder="Escribe cuánto mide la base de tu triángulo:">
+        </form>
+        <button type="button" onclick="calcularPerimetroTriangulo()" class="btn btn-outline-primary">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()" class="btn btn-outline-success">
+          Calcular el área
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--Circulo-->
+  <section class="container text-center">
+    <div class="row justify-content-center">
+      <div class="col col-6">
+        <h2>Círculo</h2>
+        <h3>Calcula el diametro, perímetro y áreao de un círculo</h3>
+        <form class="input-group mb-1 ">
+          <input id="InputCirculo" type="number" class="form-control" placeholder="Escribe cuánto mide el radio de tu círculo:">
+        </form>
+        <button type="button" onclick="calcularPerimetroCirculo()" class="btn btn-outline-primary">
+          Calcular el perímetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()" class="btn btn-outline-success">
+          Calcular el área
+        </button>
+      </div>
+    </div>
+  </section>
+  <script src="/assets/js/figuras.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
